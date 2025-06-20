@@ -7,7 +7,7 @@ exports.handler = async (event) => {
   // pick the right code
   const code = locale === "CA"
     ? process.env.PROMO_CODE_CA
-    : process.env.PROMO_CODE_DEFAULT;
+    : process.env.PROMO_CODE_US;
 
   // build the sentence
   const sentence = locale === "CA"
