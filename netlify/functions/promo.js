@@ -6,6 +6,7 @@ exports.handler = async () => {
   return {
     statusCode: 200,
     headers: { "Content-Type": "text/html" },
-    body: `<span class="promo">${code}</span>`
+    //body: `<span class="promo">${code}</span>`
+    body: `<p style="text-align: center; margin: 0; line-height: 35px; font-size: 26px;" class="promo">{% if contact.data.locale == "CA" %}Use code <b>CANDAY</b> at checkout for 20% off sitewide – $500 CAD minimum for free shipping.{% else %}Use code <b>${code}</b> at checkout for 20% off sitewide.{% endif %}</p>`
   };
 };
