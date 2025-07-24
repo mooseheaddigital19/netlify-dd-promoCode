@@ -4,15 +4,22 @@ exports.handler = async (event) => {
   // read ?locale=XX
   const locale = (event.queryStringParameters || {}).locale?.toUpperCase();
 
+  // read discount percent from env (default to 10 if unset)
+  const discount = process.env.PROMO_DISCOUNT || '10';
+
   // pick the right code
   const code = locale === "CA"
     ? process.env.PROMO_CODE_CA
     : process.env.PROMO_CODE_US;
 
   // build the sentence
+   // const sentence = locale === "CA"
+   //  ? `Use code ${code} at checkout for 10% off sitewide – $500 CAD minimum for free shipping in Canada.`
+   //  : `Use code ${code} at checkout for 10% off sitewide.`;
+
   const sentence = locale === "CA"
-    ? `Use code ${code} at checkout for 20% off sitewide – $500 CAD minimum for free shipping in Canada.`
-    : `Use code ${code} at checkout for 20% off sitewide.`;
+    ? `Use code ${code} at checkout for ${discount}% off sitewide – $500 CAD minimum for free shipping in Canada.`
+    : `Use code ${code} at checkout for ${discount}% off sitewide.`;
 
   return {
     statusCode: 200,
