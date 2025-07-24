@@ -14,9 +14,9 @@ exports.handler = async (event) => {
 
   // build the sentence
   // typical promo set up
-  const sentence = locale === "CA"
-    ? `Use code ${code} at checkout for ${discount}% off sitewide – $500 CAD minimum for free shipping in Canada.`
-    : `Use code ${code} at checkout for ${discount}% off sitewide.`;
+  //const sentence = locale === "CA"
+   // ? `Use code ${code} at checkout for ${discount}% off sitewide – $500 CAD minimum for free shipping in Canada.`
+   // : `Use code ${code} at checkout for ${discount}% off sitewide.`;
 
 // summer sale set up
   const sentence = locale === "CA"
