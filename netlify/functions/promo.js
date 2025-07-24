@@ -17,9 +17,10 @@ exports.handler = async (event) => {
    //  ? `Use code ${code} at checkout for 10% off sitewide – $500 CAD minimum for free shipping in Canada.`
    //  : `Use code ${code} at checkout for 10% off sitewide.`;
 
+  // summer sale set up
   const sentence = locale === "CA"
-    ? `Use code ${code} at checkout for ${discount}% off sitewide – $500 CAD minimum for free shipping in Canada.`
-    : `Use code ${code} at checkout for ${discount}% off sitewide.`;
+    ? `<strong>Summer Sale!</strong><br>15% Off Sitewide + Free Pillows With Mattresses Size Twin & Up`
+    : `<strong>Summer Sale!</strong><br>15% Off Sitewide + Free Pillows With Mattresses Size Twin & Up`;
 
   return {
     statusCode: 200,
