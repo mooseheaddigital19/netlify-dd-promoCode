@@ -20,7 +20,7 @@ exports.handler = async (event) => {
   // summer sale set up
   const sentence = locale === "CA"
     ? `<strong>Summer Sale!</strong><br>15% Off Sitewide + Free Pillows With Mattresses Size Twin & Up`
-    : `<strong>Summer Sale!</strong><br>Summer Sale!15% Off Sitewide + Free Pillows With Mattresses Size Twin & Up`;
+    : `<strong>Summer Sale!</strong><br>15% Off Sitewide + Free Pillows With Mattresses Size Twin & Up`;
 
   return {
     statusCode: 200,
