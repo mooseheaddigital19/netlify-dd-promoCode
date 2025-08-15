@@ -12,15 +12,15 @@ exports.handler = async (event) => {
     ? process.env.PROMO_CODE_CA
     : process.env.PROMO_CODE_US;
 
-  // build the sentence
-   const sentence = locale === "CA"
-   ? `Use code ${code} at checkout for ${discount}% off sitewide – $500 CAD minimum for free shipping in Canada.`
-   : `Use code ${code} at checkout for ${discount}% off sitewide.`;
-
-  // summer sale set up
+  // default sentance set up
   // const sentence = locale === "CA"
-  //  ? `<strong>Summer Sale!</strong><br>15% Off Sitewide + Free Pillows With Mattresses Size Twin & Up`
-  //  : `<strong>Summer Sale!</strong><br>15% Off Sitewide + Free Pillows With Mattresses Size Twin & Up`;
+  // ? `Use code ${code} at checkout for ${discount}% off sitewide – $500 CAD minimum for free shipping in Canada.`
+  // : `Use code ${code} at checkout for ${discount}% off sitewide.`;
+
+  // sale-specific sentance set up
+   const sentence = locale === "CA"
+    ? `<strong>Labour Day Sale!</strong><br>20% Off Sitewide`
+    : `<strong>Labor Day Sale!</strong><br>20% Off Sitewide`;
 
   return {
     statusCode: 200,
