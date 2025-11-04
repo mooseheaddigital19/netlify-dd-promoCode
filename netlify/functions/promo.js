@@ -13,14 +13,14 @@ exports.handler = async (event) => {
     : process.env.PROMO_CODE_US;
 
   // default sentance set up
-     const sentence = locale === "CA"
-     ? `Use code ${code} at checkout for ${discount}% off sitewide – $500 CAD minimum for free shipping in Canada.`
-     : `Use code ${code} at checkout for ${discount}% off sitewide.`;
+  //   const sentence = locale === "CA"
+  //   ? `Use code ${code} at checkout for ${discount}% off sitewide – $500 CAD minimum for free shipping in Canada.`
+  //   : `Use code ${code} at checkout for ${discount}% off sitewide.`;
 
   // sale-specific sentance set up
-  // const sentence = locale === "CA"
-     // ? `<strong>Fall Sale!</strong><br>15% Off Sitewide + Free Pillows`
- //    : `<strong>Fall Sale!</strong><br>15% Off Sitewide + Free Pillows`;
+   const sentence = locale === "CA"
+       ? `<strong>Black Friday Is Here</strong><br>20% Off Sitewide + Free Gifts`
+       : `<strong>Black Friday Is Here</strong><br>20% Off Sitewide + Free Gifts`;
 
   return {
     statusCode: 200,
