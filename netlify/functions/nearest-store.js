@@ -233,7 +233,7 @@ function fallbackHtml() {
             <tr>
             <td align="center" role="presentation" style="border:none;border-radius:3px;cursor:auto;padding:11px 20px;background:rgb(66, 85, 99); ">
             <a href="https://stores.naturepedic.com/" style="background: none; color:#ffffff;font-family:Arial, sans-serif;font-size:16px;line-height:120%;Margin:0;text-decoration:none;text-transform:none;display:inline-block;">
-            OPEN STORE LOCATOR
+            FIND A STORE NEAR YOU
             </a>
             </td>
             </tr>
