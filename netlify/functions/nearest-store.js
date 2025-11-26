@@ -276,8 +276,8 @@ exports.handler = async (event) => {
         const safePhone = store.phone ? store.phone : "";
         return `
           <div style="margin-bottom:12px;">
-            <p style="margin:0 0 4px 0; color: rgb(66, 85, 99);"><strong>${store.name}</strong></p>
-            <p style="margin:0 0 2px 0; color: rgb(66, 85, 99);">${store.address}</p>
+            <p style="margin:0 0 4px 0; color: rgb(66, 85, 99);font-size: 16px;"><strong>${store.name}</strong></p>
+            <p style="margin:0 0 2px 0; color: rgb(66, 85, 99);font-size: 16px;">${store.address}</p>
             ${
               safePhone
                 ? `<p style="margin:0 0 6px 0; color: rgb(66, 85, 99);">${safePhone}</p>`
@@ -291,10 +291,10 @@ exports.handler = async (event) => {
               </a>
             </p>
             <!--Padding and border combo button with gradient background-->
-            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
+            <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
             <tr>
-            <td align="center" role="presentation" style="border:none;border-radius:3px;cursor:auto;padding:11px 20px;background:rgb(66, 85, 99); ">
-            <a href="${store.url}" style="background: none; color:#ffffff;font-family:Arial, sans-serif;font-size:16px;font-weight:600;line-height:120%;Margin:0;text-decoration:none;text-transform:none;display:inline-block;">
+            <td align="left" role="presentation" style="border:none;border-radius:3px;cursor:auto;padding:11px 20px;background:rgb(66, 85, 99); ">
+            <a href="${store.url}" style="background: none; color:#ffffff;font-family:Arial, sans-serif;font-size:16px;line-height:120%;Margin:0;text-decoration:none;text-transform:none;display:inline-block;">
             gradient cta
             </a>
             </td>
@@ -308,7 +308,7 @@ exports.handler = async (event) => {
 
     // <p style="font-family: Arial, sans-serif; font-size:16px; line-height:1.4;color: rgb(66, 85, 99);font-size:18px;"><strong>${headingText}</strong></p>
     const html = `
-      <div style="font-family: Arial, sans-serif; font-size:14px; line-height:1.4;">  
+      <div style="font-family: Arial, sans-serif; font-size:16px; line-height:1.4;">  
         ${storesHtml}
       </div>
     `;
