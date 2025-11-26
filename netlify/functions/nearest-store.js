@@ -227,11 +227,11 @@ const stores = {
 function fallbackHtml() {
   return `
     <div style="font-family: Arial, sans-serif; font-size:16px; line-height:1.4;color: rgb(66, 85, 99);">
-      <p style="font-family: Arial, sans-serif; font-size:16px; line-height:1.4;color: rgb(66, 85, 99);"><strong>Find a Naturepedic store near you</strong></p>
+      <p style="font-family: Arial, sans-serif; font-size:16px; line-height:1.4;color: rgb(66, 85, 99);text-align: center;">Find a Naturepedic store near you</p>
             <!--Padding and border combo button with gradient background-->
-            <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
+            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
             <tr>
-            <td align="left" role="presentation" style="border:none;border-radius:3px;cursor:auto;padding:11px 20px;background:rgb(66, 85, 99); ">
+            <td align="center" role="presentation" style="border:none;border-radius:3px;cursor:auto;padding:11px 20px;background:rgb(66, 85, 99); ">
             <a href="https://stores.naturepedic.com/" style="background: none; color:#ffffff;font-family:Arial, sans-serif;font-size:16px;line-height:120%;Margin:0;text-decoration:none;text-transform:none;display:inline-block;">
             OPEN STORE LOCATOR
             </a>
@@ -376,17 +376,17 @@ exports.handler = async (event) => {
         const safePhone = store.phone ? store.phone : "";
         return `
           <div style="margin-bottom:20px;">
-            <p style="margin:0 0 4px 0; color: rgb(66, 85, 99);font-size: 16px;"><strong>${store.name}</strong></p>
-            <p style="margin:0 0 2px 0; color: rgb(66, 85, 99);font-size: 16px;">${store.address}</p>
+            <p style="margin:0 0 4px 0; color: rgb(66, 85, 99);font-size: 16px;text-align: center;"><strong>${store.name}</strong></p>
+            <p style="margin:0 0 2px 0; color: rgb(66, 85, 99);font-size: 16px;text-align: center;">${store.address}</p>
             ${
               safePhone
-                ? `<p style="margin:0 0 6px 0; color: rgb(66, 85, 99);font-size: 16px;">${safePhone}</p>`
+                ? `<p style="margin:0 0 6px 0; color: rgb(66, 85, 99);font-size: 16px;text-align: center;">${safePhone}</p>`
                 : ""
             }
             <!--Padding and border combo button with gradient background-->
-            <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
+            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
             <tr>
-            <td align="left" role="presentation" style="border:none;border-radius:3px;cursor:auto;padding:11px 20px;background:rgb(66, 85, 99); ">
+            <td align="center" role="presentation" style="border:none;border-radius:3px;cursor:auto;padding:11px 20px;background:rgb(66, 85, 99); ">
             <a href="${store.url}" style="background: none; color:#ffffff;font-family:Arial, sans-serif;font-size:16px;line-height:120%;Margin:0;text-decoration:none;text-transform:none;display:inline-block;">
             VIEW STORE
             </a>
