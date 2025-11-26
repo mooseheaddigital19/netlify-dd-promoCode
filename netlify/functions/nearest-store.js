@@ -280,16 +280,9 @@ exports.handler = async (event) => {
             <p style="margin:0 0 2px 0; color: rgb(66, 85, 99);font-size: 16px;">${store.address}</p>
             ${
               safePhone
-                ? `<p style="margin:0 0 6px 0; color: rgb(66, 85, 99);">${safePhone}</p>`
+                ? `<p style="margin:0 0 6px 0; color: rgb(66, 85, 99);font-size: 16px;">${safePhone}</p>`
                 : ""
             }
-            <p style="margin:0 0 10px 0;">
-              <a href="${store.url}"
-                 style="display:inline-block;padding:8px 14px;border-radius:3px;
-                        background-color:rgb(66, 85, 99);color:#ffffff;text-decoration:none;">
-                View store
-              </a>
-            </p>
             <!--Padding and border combo button with gradient background-->
             <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
             <tr>
