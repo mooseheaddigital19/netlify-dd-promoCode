@@ -286,7 +286,7 @@ exports.handler = async (event) => {
             <p style="margin:0 0 10px 0;">
               <a href="${store.url}"
                  style="display:inline-block;padding:8px 14px;border-radius:3px;
-                        background-color:#2f855a;color:#ffffff;text-decoration:none;">
+                        background-color:rgb(66, 85, 99);color:#ffffff;text-decoration:none;">
                 View store
               </a>
             </p>
