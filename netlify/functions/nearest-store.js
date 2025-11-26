@@ -295,9 +295,9 @@ exports.handler = async (event) => {
       })
       .join("");
 
+    //header if we want. add under ${storesHtml}. <p style="font-family: Arial, sans-serif; font-size:16px; line-height:1.4;color: rgb(66, 85, 99);font-size:18px;"><strong>${headingText}</strong></p>
     const html = `
-      <div style="font-family: Arial, sans-serif; font-size:14px; line-height:1.4;">
-        //<p style="font-family: Arial, sans-serif; font-size:16px; line-height:1.4;color: rgb(66, 85, 99);font-size:18px;"><strong>${headingText}</strong></p>
+      <div style="font-family: Arial, sans-serif; font-size:14px; line-height:1.4;">        
         ${storesHtml}
       </div>
     `;
