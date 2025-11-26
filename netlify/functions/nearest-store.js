@@ -245,6 +245,100 @@ function fallbackHtml() {
   `;
 }
 
+// Normalize raw country string → "US" or "CA"
+function normalizeCountry(input = "") {
+  const c = input.trim().toLowerCase();
+
+  const map = {
+    "united states": "US",
+    "united states of america": "US",
+    "us": "US",
+    "u.s.": "US",
+    "u.s": "US",
+    "usa": "US",
+    "america": "US",
+    "american": "US",
+
+    "canada": "CA",
+    "ca": "CA",
+    "c.a.": "CA",
+    "can": "CA"
+  };
+
+  return map[c] || input.toUpperCase().trim();
+}
+
+
+// Normalize raw state/province → canonical code ("CA", "NY", "ON", etc.)
+function normalizeRegion(input = "") {
+  const s = input.trim().toLowerCase();
+
+  const map = {
+    // States
+    "arizona": "AZ",
+    "az": "AZ",
+
+    "california": "CA",
+    "ca": "CA",
+
+    "colorado": "CO",
+    "co": "CO",
+
+    "connecticut": "CT",
+    "ct": "CT",
+
+    "florida": "FL",
+    "fl": "FL",
+
+    "georgia": "GA",
+    "ga": "GA",
+
+    "illinois": "IL",
+    "il": "IL",
+
+    "maryland": "MD",
+    "md": "MD",
+
+    "massachusetts": "MA",
+    "ma": "MA",
+
+    "minnesota": "MN",
+    "mn": "MN",
+
+    "north carolina": "NC",
+    "n. carolina": "NC",
+    "nc": "NC",
+
+    "new york": "NY",
+    "ny": "NY",
+
+    "ohio": "OH",
+    "oh": "OH",
+
+    "oregon": "OR",
+    "or": "OR",
+
+    "tennessee": "TN",
+    "tn": "TN",
+
+    "texas": "TX",
+    "tx": "TX",
+
+    "washington": "WA",
+    "wa": "WA",
+
+    // Provinces
+    "ontario": "ON",
+    "on": "ON",
+
+    "british columbia": "BC",
+    "b.c.": "BC",
+    "bc": "BC"
+  };
+
+  return map[s] || input.toUpperCase().trim();
+}
+
 
 exports.handler = async (event) => {
   try {
@@ -255,8 +349,8 @@ exports.handler = async (event) => {
     // postcode is available if you want to use it later, but not used right now
     const postcodeRaw = params.postcode || "";
 
-    const country = countryRaw.toUpperCase().trim(); // e.g. "US", "CA"
-    const state = stateRaw.toUpperCase().trim();     // e.g. "CA", "TX", "ON", "BC"
+    const country = normalizeCountry(countryRaw);
+    const state = normalizeRegion(stateRaw);
     const postcode = postcodeRaw.trim();             // not used yet
 
     const key = `${country}:${state}`;
