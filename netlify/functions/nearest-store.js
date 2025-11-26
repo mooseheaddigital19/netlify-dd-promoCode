@@ -276,11 +276,11 @@ exports.handler = async (event) => {
         const safePhone = store.phone ? store.phone : "";
         return `
           <div style="margin-bottom:12px;">
-            <p style="margin:0 0 4px 0;"><strong>${store.name}</strong></p>
-            <p style="margin:0 0 2px 0;">${store.address}</p>
+            <p style="margin:0 0 4px 0; color: rgb(66, 85, 99);"><strong>${store.name}</strong></p>
+            <p style="margin:0 0 2px 0; color: rgb(66, 85, 99);">${store.address}</p>
             ${
               safePhone
-                ? `<p style="margin:0 0 6px 0;">${safePhone}</p>`
+                ? `<p style="margin:0 0 6px 0; color: rgb(66, 85, 99);">${safePhone}</p>`
                 : ""
             }
             <p style="margin:0 0 10px 0;">
@@ -297,7 +297,7 @@ exports.handler = async (event) => {
 
     const html = `
       <div style="font-family: Arial, sans-serif; font-size:14px; line-height:1.4;">
-        <p style="font-family: Arial, sans-serif; font-size:16px; line-height:1.4;color: rgb(66, 85, 99);"><strong>${headingText}</strong></p>
+        <p style="font-family: Arial, sans-serif; font-size:16px; line-height:1.4;color: rgb(66, 85, 99);font-size:18px;"><strong>${headingText}</strong></p>
         ${storesHtml}
       </div>
     `;
