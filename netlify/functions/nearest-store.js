@@ -227,7 +227,7 @@ const stores = {
 function fallbackHtml() {
   return `
     <div style="font-family: Arial, sans-serif; font-size:16px; line-height:1.4;color: rgb(66, 85, 99);">
-      <p style="font-family: Arial, sans-serif; font-size:16px; line-height:1.4;color: rgb(66, 85, 99);text-align: center;">Find a Naturepedic store near you</p>
+      <p style="font-family: Arial, sans-serif; font-size:16px; line-height:1.4;color: rgb(66, 85, 99);text-align: center;">With organic mattress and bedding stores across the U.S. and Canada, we’re here to help you create your dream bedroom in a mattress showroom space as refreshing as a good night’s sleep.</p>
             <!--Padding and border combo button with gradient background-->
             <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
             <tr>
