@@ -380,7 +380,7 @@ exports.handler = async (event) => {
             <p style="margin:0 0 2px 0; color: rgb(66, 85, 99);font-size: 16px;text-align: center;">${store.address}</p>
             ${
               safePhone
-                ? `<p style="margin:0 0 6px 0; color: rgb(66, 85, 99);font-size: 16px;text-align: center;">${safePhone}</p>`
+                ? `<p style="margin:0 0 15px 0; color: rgb(66, 85, 99);font-size: 16px;text-align: center;">${safePhone}</p>`
                 : ""
             }
             <!--Padding and border combo button with gradient background-->
@@ -393,7 +393,6 @@ exports.handler = async (event) => {
             </td>
             </tr>
             </table>
-            <p>&nbsp;</p>
             
           </div>
         `;
