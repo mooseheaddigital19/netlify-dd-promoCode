@@ -375,8 +375,8 @@ exports.handler = async (event) => {
       .map((store) => {
         const safePhone = store.phone ? store.phone : "";
         return `
-          <div style="margin-bottom:20px;">
-            <p style="margin:0 0 4px 0; color: rgb(66, 85, 99);font-size: 16px;text-align: center;"><strong>${store.name}</strong></p>
+          <div style="margin-bottom:20px;line-height:1.4;">
+            <p style="margin:0 0 4px 0; color: rgb(66, 85, 99);font-size: 16px;text-align: center;line-height:1.4;"><strong>${store.name}</strong></p>
             <p style="margin:0 0 2px 0; color: rgb(66, 85, 99);font-size: 16px;text-align: center;">${store.address}</p>
             ${
               safePhone
