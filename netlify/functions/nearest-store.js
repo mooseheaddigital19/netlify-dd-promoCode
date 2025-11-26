@@ -376,7 +376,7 @@ exports.handler = async (event) => {
         const safePhone = store.phone ? store.phone : "";
         return `
           <div style="margin-bottom:20px;line-height:1.4;">
-            <p style="margin:0 0 4px 0; color: rgb(66, 85, 99);font-size: 16px;text-align: center;line-height:1.4;"><strong>${store.name}</strong></p>
+            <p style="margin:15px 0 4px 0; color: rgb(66, 85, 99);font-size: 16px;text-align: center;line-height:1.4;"><strong>${store.name}</strong></p>
             <p style="margin:0 0 2px 0; color: rgb(66, 85, 99);font-size: 16px;text-align: center;">${store.address}</p>
             ${
               safePhone
