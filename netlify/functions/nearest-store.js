@@ -226,8 +226,8 @@ const stores = {
 // Helper: generic fallback HTML (store locator)
 function fallbackHtml() {
   return `
-    <div style="font-family: Arial, sans-serif; font-size:14px; line-height:1.4;">
-      <p><strong>Find a Naturepedic store near you</strong></p>
+    <div style="font-family: Arial, sans-serif; font-size:16px; line-height:1.4;color: rgb(66, 85, 99);">
+      <p style="font-family: Arial, sans-serif; font-size:16px; line-height:1.4;color: rgb(66, 85, 99);"><strong>Find a Naturepedic store near you</strong></p>
       <p>
         <a href="https://www.naturepedic.com/stores"
            style="display:inline-block;padding:10px 18px;border-radius:3px;
@@ -297,7 +297,7 @@ exports.handler = async (event) => {
 
     const html = `
       <div style="font-family: Arial, sans-serif; font-size:14px; line-height:1.4;">
-        <p><strong>${headingText}</strong></p>
+        <p style="font-family: Arial, sans-serif; font-size:16px; line-height:1.4;color: rgb(66, 85, 99);"><strong>${headingText}</strong></p>
         ${storesHtml}
       </div>
     `;
