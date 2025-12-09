@@ -19,8 +19,8 @@ exports.handler = async (event) => {
 
   // sale-specific sentance set up
    const sentence = locale === "CA"
-       ? `<strong>Black Friday Is Here</strong><br>20% Off Sitewide + Free Gifts`
-       : `<strong>Black Friday Is Here</strong><br>20% Off Sitewide + Free Gifts`;
+       ? `<strong>Holiday Sale!</strong><br>Save 20% Sitewide`
+       : `<strong>Holiday Sale!</strong><br>Save 20% Sitewide`;
 
   return {
     statusCode: 200,
