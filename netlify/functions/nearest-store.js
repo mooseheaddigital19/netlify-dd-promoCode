@@ -14,7 +14,7 @@ const stores = {
       name: "Scottsdale Organic Mattress Gallery",
       address: "18529 N Scottsdale Rd STE 129, Scottsdale, AZ 85255",
       phone: "(480) 634-5338",
-      url: "https://stores.naturepedic.com/az/scottsdale/n-scottsdale-rd.html"
+      url: "https://stores.naturepedic.com/az/scottsdale/n-scottsdale-rd.html",
       lat: 33.65324586548984,
       lng: -111.92474716158308
     }
