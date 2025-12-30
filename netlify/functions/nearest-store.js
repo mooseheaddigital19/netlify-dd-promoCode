@@ -463,7 +463,7 @@ function renderStoresHtml(storeObjs /* [{store, distance}] or [{store}] */) {
           <p style="margin:0 0 2px 0; color: rgb(66, 85, 99);font-size: 16px;text-align: center;">${store.address}</p>
           ${
             safePhone
-              ? `<p style="margin:0 0 2px 0; color: rgb(66, 85, 99);font-size: 16px;text-align: center;">${safePhone}</p>`
+              ? `<p style="margin:0 0 10px 0; color: rgb(66, 85, 99);font-size: 16px;text-align: center;">${safePhone}</p>`
               : ""
           }
           ${distanceLine}
