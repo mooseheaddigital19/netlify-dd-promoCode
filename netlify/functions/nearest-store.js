@@ -52,9 +52,9 @@ const stores = {
       name: "Denver Organic Mattress Gallery",
       address: "290 Fillmore St, Denver, CO 80206",
       phone: "(303) 388-8265",
-      url: "https://stores.naturepedic.com/co/denver/filmore-st.html"
-      // lat: ,
-      // lng: ,
+      url: "https://stores.naturepedic.com/co/denver/filmore-st.html",
+      lat: 39.72099122130299, 
+      lng: -104.9530916036208
     }
   ],
 
@@ -63,9 +63,9 @@ const stores = {
       name: "Greenwich Organic Mattress Gallery",
       address: "79 East Putnam Ave, Greenwich, CT 06830",
       phone: "(203) 340-9988",
-      url: "https://stores.naturepedic.com/ct/greenwich/east-putnam-ave.html"
-      // lat: ,
-      // lng: ,
+      url: "https://stores.naturepedic.com/ct/greenwich/east-putnam-ave.html",
+      lat: 41.03329583973238,
+      lng: -73.62513373238828
     }
   ],
 
@@ -74,9 +74,9 @@ const stores = {
       name: "West Palm Beach Organic Mattress Gallery",
       address: "1880 Okeechobee Blvd Suite B, West Palm Beach, FL 33409",
       phone: "(561) 791-6091",
-      url: "https://stores.naturepedic.com/fl/westpalmbeach/okeechobee-blvd.html"
-      // lat: ,
-      // lng: ,
+      url: "https://stores.naturepedic.com/fl/westpalmbeach/okeechobee-blvd.html",
+      lat: 26.706096526026037, 
+      lng: -80.08014204652041
     }
   ],
 
@@ -85,9 +85,9 @@ const stores = {
       name: "Atlanta Organic Mattress Gallery",
       address: "3167 Peachtree Road NE Suite D-1, Atlanta, GA 30305",
       phone: "(404) 549-2012",
-      url: "https://stores.naturepedic.com/ga/atlanta/peachtree-road-ne.html"
-      // lat: ,
-      // lng: ,
+      url: "https://stores.naturepedic.com/ga/atlanta/peachtree-road-ne.html",
+      lat: 33.84056918749163, 
+      lng: -84.37589799041037
     }
   ],
 
@@ -96,9 +96,9 @@ const stores = {
       name: "Chicago Organic Mattress Gallery",
       address: "643 Central Avenue, Highland Park, IL 60035",
       phone: "(847) 926-7295",
-      url: "https://stores.naturepedic.com/il/highlandpark/central-avenue.html"
-      // lat: ,
-      // lng: ,
+      url: "https://stores.naturepedic.com/il/highlandpark/central-avenue.html",
+      lat: 42.185305117311124, 
+      lng: -87.80135283232684
     }
   ],
 
@@ -107,9 +107,9 @@ const stores = {
       name: "North Bethesda Organic Mattress Gallery",
       address: "11802 Rockville Pike Suite A, Rockville, MD 20852",
       phone: "(240) 242-3131",
-      url: "https://stores.naturepedic.com/md/rockville/rockville-pike.html"
-      // lat: ,
-      // lng: ,
+      url: "https://stores.naturepedic.com/md/rockville/rockville-pike.html",
+      lat: 39.05000008343599, 
+      lng: -77.11520160365494
     }
   ],
 
@@ -118,17 +118,17 @@ const stores = {
       name: "Boston Organic Mattress Gallery",
       address: "252 Newbury St 1st Floor, Boston, MA 02116",
       phone: "(857) 957-0151",
-      url: "https://stores.naturepedic.com/ma/boston/newbury-st.html"
-      // lat: ,
-      // lng: ,
+      url: "https://stores.naturepedic.com/ma/boston/newbury-st.html",
+      lat: 42.34948672505605, 
+      lng: -71.08268006115364
     },
     {
       name: "Wellesley Organic Mattress Gallery",
       address: "444 Washington St, Wellesley, MA 02482",
       phone: "(781) 237-0540",
-      url: "https://stores.naturepedic.com/ma/wellesley/washington-st.html"
-      // lat: ,
-      // lng: ,
+      url: "https://stores.naturepedic.com/ma/wellesley/washington-st.html",
+      lat: 42.30209804399681, 
+      lng: -71.28608777464918
     }
   ],
 
@@ -137,9 +137,9 @@ const stores = {
       name: "Minneapolis Organic Mattress Gallery",
       address: "14200 Wayzata Blvd, Minnetonka, MN 55305",
       phone: "(952) 855-7492",
-      url: "https://stores.naturepedic.com/mn/minnetonka/wayzata-blvd.html"
-      // lat: ,
-      // lng: ,
+      url: "https://stores.naturepedic.com/mn/minnetonka/wayzata-blvd.html",
+      lat: 44.972908591572455, 
+      lng: -93.45619964751542
     }
   ],
 
@@ -148,9 +148,9 @@ const stores = {
       name: "Charlotte Organic Mattress Gallery",
       address: "3920 Sharon Rd #110, Charlotte, NC 28211",
       phone: "(704) 835-1057",
-      url: "https://stores.naturepedic.com/nc/charlotte/sharon-rd.html"
-      // lat: ,
-      // lng: ,
+      url: "https://stores.naturepedic.com/nc/charlotte/sharon-rd.html",
+      lat: 35.15660926541973, 
+      lng: -80.82358417315788
     }
   ],
 
@@ -159,17 +159,17 @@ const stores = {
       name: "Brooklyn Organic Mattress Gallery",
       address: "85 N 3RD ST, Brooklyn, NY 11249",
       phone: "(347) 227-7614",
-      url: "https://stores.naturepedic.com/ny/brooklyn/n-3rd-st.html"
-      // lat: ,
-      // lng: ,
+      url: "https://stores.naturepedic.com/ny/brooklyn/n-3rd-st.html",
+      lat: 40.71729978469528, 
+      lng: -73.96229115939066
     },
     {
       name: "NYC Organic Mattress Gallery",
       address: "245 E 60th St #1, New York, NY 10022",
       phone: "(212) 371-8690",
-      url: "https://stores.naturepedic.com/ny/newyork/e-60th-st.html"
-      // lat: ,
-      // lng: ,
+      url: "https://stores.naturepedic.com/ny/newyork/e-60th-st.html",
+      lat: 40.761811751247926, 
+      lng: -73.96421427473112
     }
   ],
 
@@ -178,9 +178,9 @@ const stores = {
       name: "Cleveland Organic Mattress Gallery",
       address: "16925 Park Circle Dr, Chagrin Falls, OH 44023",
       phone: "(800) 917-3342",
-      url: "https://stores.naturepedic.com/oh/chagrinfalls/park-circle-dr.html"
-      // lat: ,
-      // lng: ,
+      url: "https://stores.naturepedic.com/oh/chagrinfalls/park-circle-dr.html",
+      lat: 41.41166589176042, 
+      lng: -81.35004887654672
     }
   ],
 
@@ -200,9 +200,9 @@ const stores = {
       name: "Nashville Organic Mattress Gallery",
       address: "3708 Hillsboro Pike Suite B, Nashville, TN 37215",
       phone: "(615) 864-7642",
-      url: "https://stores.naturepedic.com/tn/nashville/hillsboro-pike.html"
-      // lat: ,
-      // lng: ,
+      url: "https://stores.naturepedic.com/tn/nashville/hillsboro-pike.html",
+      lat: 45.52715121387622, 
+      lng: -122.68195916097675
     }
   ],
 
@@ -211,25 +211,25 @@ const stores = {
       name: "Dallas Organic Mattress Gallery",
       address: "5450 W Lovers Lane Ste 230, Dallas, TX 75209",
       phone: "(972) 925-0758",
-      url: "https://stores.naturepedic.com/tx/dallas/lovers-lane.html"
-      // lat: ,
-      // lng: ,
+      url: "https://stores.naturepedic.com/tx/dallas/lovers-lane.html",
+      lat: 32.850811363009804, 
+      lng: -96.8192092309328
     },
     {
       name: "Frisco Organic Mattress Gallery",
       address: "5355 Dallas Parkway Suite 630, Frisco, TX 75034",
       phone: "(469) 362-6101",
-      url: "https://stores.naturepedic.com/tx/frisco/dallas-parkway.html"
-      // lat: ,
-      // lng: ,
+      url: "https://stores.naturepedic.com/tx/frisco/dallas-parkway.html",
+      lat: 33.12257176791624, 
+      lng: -96.82340975975659
     },
     {
       name: "Southlake Organic Mattress Gallery",
       address: "1151 East Southlake Boulevard Ste 320, Southlake, TX 76092",
       phone: "(817) 410-8788",
-      url: "https://stores.naturepedic.com/tx/southlake/east-southlake-boulevard.html"
-      // lat: ,
-      // lng: ,
+      url: "https://stores.naturepedic.com/tx/southlake/east-southlake-boulevard.html",
+      lat: 32.94047714618485, 
+      lng: -97.13496913277875
     }
   ],
 
@@ -238,9 +238,9 @@ const stores = {
       name: "Bellevue Organic Mattress Gallery",
       address: "1038 116th Ave NE Ste 330, Bellevue, WA 98004",
       phone: "(425) 362-6536",
-      url: "https://stores.naturepedic.com/wa/bellevue/116th-ave-ne.html"
-      // lat: ,
-      // lng: ,
+      url: "https://stores.naturepedic.com/wa/bellevue/116th-ave-ne.html",
+      lat: 47.61996513272183, 
+      lng: -122.18406386085478
     }
   ],
 
