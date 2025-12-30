@@ -452,10 +452,6 @@ function renderStoresHtml(storeObjs /* [{store, distance}] or [{store}] */) {
       const distance = typeof obj.distance === "number" ? obj.distance : null;
 
       const safePhone = store.phone ? store.phone : "";
-      const distanceLine =
-        Number.isFinite(distance) ? `<p style="margin:0 0 10px 0; color: rgb(66, 85, 99);font-size: 16px;text-align: center;">${distance.toFixed(
-          1
-        )} miles away</p>` : "";
 
       return `
         <div style="margin-bottom:20px;line-height:1.4;">
@@ -466,7 +462,6 @@ function renderStoresHtml(storeObjs /* [{store, distance}] or [{store}] */) {
               ? `<p style="margin:0 0 10px 0; color: rgb(66, 85, 99);font-size: 16px;text-align: center;">${safePhone}</p>`
               : ""
           }
-          ${distanceLine}
           <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
             <tr>
               <td align="center" role="presentation" style="border:none;border-radius:3px;cursor:auto;padding:11px 20px;background:rgb(66, 85, 99); ">
