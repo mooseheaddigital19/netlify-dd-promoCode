@@ -25,25 +25,25 @@ const stores = {
       name: "Irvine Organic Mattress Gallery",
       address: "8603 Irvine Center Dr, Irvine, CA 92618",
       phone: "(949) 932-0869",
-      url: "https://stores.naturepedic.com/ca/irvine/irvine-center-dr.html"
-      // lat: ,
-      // lng: ,
+      url: "https://stores.naturepedic.com/ca/irvine/irvine-center-dr.html",
+      lat: 33.645375468087245,
+      lng:  -117.7430970615834
     },
     {
       name: "Los Angeles Organic Mattress Gallery",
       address: "144 S Robertson Blvd, Los Angeles, CA 90048",
       phone: "(310) 271-1055",
-      url: "https://stores.naturepedic.com/ca/losangeles/s-robertson-blvd.html"
-      // lat: ,
-      // lng: ,
+      url: "https://stores.naturepedic.com/ca/losangeles/s-robertson-blvd.html",
+      lat: 34.074374370088314, 
+      lng: -118.38355871923565
     },
     {
       name: "La Jolla Organic Mattress Gallery",
       address: "7629 Girard Ave Suite C-2, La Jolla, CA 92037",
       phone: "(858) 352-6465",
-      url: "https://stores.naturepedic.com/ca/lajolla/girard-ave.html"
-      // lat: ,
-      // lng: ,
+      url: "https://stores.naturepedic.com/ca/lajolla/girard-ave.html",
+      lat: 32.842971636376994, 
+      lng: -117.27294151928997
     }
   ],
 
