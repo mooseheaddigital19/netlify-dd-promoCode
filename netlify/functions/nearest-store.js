@@ -189,9 +189,9 @@ const stores = {
       name: "Portland Organic Mattress Gallery",
       address: "530 NW 11th Ave, Portland, OR 97209",
       phone: "(971) 888-5250",
-      url: "https://stores.naturepedic.com/or/portland/nw-11th-ave.html"
-      // lat: ,
-      // lng: ,
+      url: "https://stores.naturepedic.com/or/portland/nw-11th-ave.html",
+      lat: 45.52715121387622, 
+      lng: -122.68195916097675
     }
   ],
 
@@ -201,8 +201,8 @@ const stores = {
       address: "3708 Hillsboro Pike Suite B, Nashville, TN 37215",
       phone: "(615) 864-7642",
       url: "https://stores.naturepedic.com/tn/nashville/hillsboro-pike.html",
-      lat: 45.52715121387622, 
-      lng: -122.68195916097675
+      lat: 36.10993829738874, 
+      lng: -86.81106455962038
     }
   ],
 
