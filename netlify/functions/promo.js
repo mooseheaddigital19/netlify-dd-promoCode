@@ -12,12 +12,12 @@ exports.handler = async (event) => {
     ? process.env.PROMO_CODE_CA
     : process.env.PROMO_CODE_US;
 
- //  default sentance set up
+ // KEEP COMMENTED: default sentance set up
      const sentence = locale === "CA"
      ? `Use code ${code} at checkout for ${discount}% off sitewide – $500 CAD minimum for free shipping in Canada.`
      : `Use code ${code} at checkout for ${discount}% off sitewide.`;
 
-  // sale-specific sentance set up
+  // KEEP COMMENTED: sale-specific sentance set up
   // const sentence = locale === "CA"
   //     ? `<strong>Holiday Sale!</strong><br>Save 20% Sitewide`
   //     : `<strong>Holiday Sale!</strong><br>Save 20% Sitewide`;
