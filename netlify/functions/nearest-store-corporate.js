@@ -153,7 +153,7 @@ const stores = {
   "US:AZ": [
     {
       name: "Scottsdale",
-      address: "8529 N Scottsdale Road, Suite 129, Scottsdale, AZ 85255",
+      address: "18529 N Scottsdale Road, Suite 129, Scottsdale, AZ 85255",
       phone: "(480) 634-5338",
       url: "https://stores.naturepedic.com/az/scottsdale/n-scottsdale-rd.html",
       lat: 33.65324586548984,
