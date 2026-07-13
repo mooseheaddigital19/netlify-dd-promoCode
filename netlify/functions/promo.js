@@ -13,14 +13,14 @@ exports.handler = async (event) => {
     : process.env.PROMO_CODE_US;
 
  // KEEP COMMENTED: default sentance set up
- //    const sentence = locale === "CA"
- //    ? `Use code ${code} at checkout for ${discount}% off sitewide – $500 CAD minimum for free shipping in Canada.`
- //    : `Use code ${code} at checkout for ${discount}% off sitewide.`;
+     const sentence = locale === "CA"
+     ? `Use code ${code} at checkout for ${discount}% off sitewide – $500 CAD minimum for free shipping in Canada.`
+     : `Use code ${code} at checkout for ${discount}% off sitewide.`;
 
   // KEEP COMMENTED: sale-specific sentance set up
-   const sentence = locale === "CA"
-       ? `<strong>The 4th of July Mattress Event</strong><br>Get 20% off organic mattresses & bedding*`
-       : `<strong>The 4th of July Mattress Event</strong><br>Get 20% off organic mattresses & bedding`;
+  // const sentence = locale === "CA"
+  //     ? `<strong>The 4th of July Mattress Event</strong><br>Get 20% off organic mattresses & bedding*`
+  //     : `<strong>The 4th of July Mattress Event</strong><br>Get 20% off organic mattresses & bedding`;
 
   return {
     statusCode: 200,
